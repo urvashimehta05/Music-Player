@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Music player</title>
+        <link rel="stylesheet"href="style.css">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    <div class="music-player">
+        <div class="details">
+            <div class="now-playing">PLAYING X OF Y</div>
+        <div class="Track-name">SWIFT</div>
+<div class="Track-img"><img src=""></div>
+<div class="artist-name"><h6></h6></div>
+</div>
+<div class="buttons"> <!--Track button displaying button-->
+    <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa-2x"></i></div>
+        <div class="playpause-track" onclick="playPauseTrack()">
+            <i class="fa fa-play-circle fa-5x"></i>
+        </div>
+        <div class="next-track" onclick="nextTrack()">
+            <i class="fa fa-step-forward fa-2x"></i>
+    </div></div>
+<div class="slider-container">
+<div class="current-time">00:00</div>
+<input type="range"min="1"max="100" value="0"class="seek-slider" onclick="seekTo()">
+<div class="total-duration">00:00</div>
+</div>
+<div class="volume_container">
+    <i class="fa fa-volume-down"></i>
+    <input type="range" min="1" max="100"value="99" class="volume_slider" onclick="setVolume()">
+    <i class="fa fa-volume-up"></i>
+</div>
+</div>
+<script src="app.js"></script>
+</html>
