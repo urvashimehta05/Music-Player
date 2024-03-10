@@ -24,13 +24,13 @@ let track_list = [
         name : "Path Beauty",
         path: "path beauty.mp3",
         image: "song5.jpeg",
-        Artist: "Henry"
+        Artist: "Dave Millier"
     },
     {
-    name: "battle of the dragons",
-    path: "C:\Users\LENOVO\Desktop\project\frontend\battle-of-the-dragons.mp3",
+    name: "Battle of the Dragons",
+    path: "BattleDragon.mp3",
     image: "song3.jpeg",
-    artist: "William "
+    artist: "Stevie Nicks"
     } 
 ];
 function loadTrack(track_index){
@@ -70,7 +70,7 @@ function playTrack() {
 function pauseTrack() {
     curr_track.pause();
     isPlaying = false;
-    playPause_btn.innerHTML = <i class = "fa fa-play-circle fa-5x"></i>
+    playPause_btn.innerHTML = '<i class = "fa fa-play-circle fa-5x"></i>'
 }
 function nextTrack() {
     if(track_index<track_list.length-1)
@@ -79,7 +79,7 @@ else track_index = 0;
 loadTrack(track_index);
 playTrack();
 }
-function previousTrack() {
+function prevTrack() {
     if(track_index>0)
     track_index -=1;
 track_index = track_list.length-1;
