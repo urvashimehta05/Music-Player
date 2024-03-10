@@ -70,6 +70,7 @@ function playTrack() {
 function pauseTrack() {
     curr_track.pause();
     isPlaying = false;
+    playPause_btn.innerHTML = <i class = "fa fa-play-circle fa-5x"></i>
 }
 function nextTrack() {
     if(track_index<track_list.length-1)
